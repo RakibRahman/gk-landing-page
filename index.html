@@ -8,6 +8,13 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body class="bg-gray-200">
     <header
@@ -54,7 +61,7 @@
           Advantages
         </h1>
         <div
-          class="px-2 flex flex-col justify-between items-center md:flex-row gap-4"
+          class="px-2 grid place-content-center gap-4 grid-rows-3 md:grid-cols-3"
         >
           <div
             class="w-44 h-28 py-8 px-4 text-sm bg-red-100 text-center border-b-4 border-red-500 rounded-xl"
