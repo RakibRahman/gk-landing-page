@@ -18,13 +18,17 @@
   </head>
   <body class="bg-gray-200">
     <header
-      class="bg-indigo-500 px-10 py-5 lg:px-64 relative border-b-4 border-red-400"
+      class="relative px-10 py-5 bg-indigo-500 border-b-4 border-red-400 lg:px-64"
     >
-      <nav class="flex justify-between items-center md:mb-16">
+      <nav class="flex items-center justify-between md:mb-16">
         <img class="w-1/2" src="img/logo.svg" alt="Logo" />
-        <img class="w-10 md:hidden" src="img/icons8-menu-96.png" alt="Menu" />
+        <img
+          class="w-10 cursor-pointer md:hidden"
+          src="img/icons8-menu-96.png"
+          alt="Menu"
+        />
       </nav>
-      <div class="text-white my-5 md:text-3xl">
+      <div class="my-5 text-white md:text-3xl">
         <h1 class="text-xl font-bold md:my-5 md:text-4xl">
           Want to learn Tailwind CSS?
         </h1>
@@ -32,19 +36,19 @@
           Tailwind is the fastest growing utility-first CSS framework. Let's
           learn it step by step.
         </p>
-        <button class="md:my-5 my-2 py-1 px-2 rounded-full bg-red-400">
+        <button class="px-2 py-1 my-2 bg-red-400 rounded-full md:my-5">
           Enroll now
         </button>
       </div>
       <img
-        class="max-w-full w-24 h-24 absolute bottom-0 right-0 mr-10 -mb-12 border-4 border-red-400 rounded-full bg-white"
+        class="absolute bottom-0 right-0 w-24 h-24 max-w-full mr-10 -mb-12 bg-white border-4 border-red-400 rounded-full"
         src="img/tailwind-css-seeklogo.com.svg"
         alt=""
       />
     </header>
     <main class="px-10 py-5 lg:px-64">
       <div class="mt-10">
-        <h1 class="text-indigo-500 font-bold mb-5 pb-2 border-b-2 md:text-4xl">
+        <h1 class="pb-2 mb-5 font-bold text-indigo-500 border-b-2 md:text-4xl">
           How it works
         </h1>
         <p class="text-gray-600 md:text-3xl">
@@ -57,17 +61,17 @@
       </div>
       <!-- end of works -->
       <div class="my-10">
-        <h1 class="text-indigo-500 font-bold mb-5 pb-2 border-b-2 md:text-4xl">
+        <h1 class="pb-2 mb-5 font-bold text-indigo-500 border-b-2 md:text-4xl">
           Advantages
         </h1>
         <div
-          class="px-2 grid place-content-center gap-4 grid-rows-3 md:grid-cols-3"
+          class="grid grid-rows-3 gap-4 px-2 place-content-center md:grid-cols-3 md:grid-rows-1"
         >
           <div
-            class="w-44 h-28 py-8 px-4 text-sm bg-red-100 text-center border-b-4 border-red-500 rounded-xl"
+            class="px-4 py-8 text-sm text-center bg-red-100 border-b-4 border-red-500 w-44 h-28 rounded-xl"
           >
             <img
-              class="p-2 w-16 h-16 mx-auto my-0 bg-gray-300 rounded-full"
+              class="w-16 h-16 p-2 mx-auto my-0 bg-gray-300 rounded-full"
               src="img/css.svg"
               alt="CSS"
             />
@@ -78,10 +82,10 @@
             </p>
           </div>
           <div
-            class="w-44 h-28 py-8 px-4 text-sm bg-red-100 text-center border-b-4 border-red-500 rounded-xl"
+            class="px-4 py-8 text-sm text-center bg-red-100 border-b-4 border-red-500 w-44 h-28 rounded-xl"
           >
             <img
-              class="p-2 w-16 h-16 mx-auto my-0 bg-gray-300 rounded-full"
+              class="w-16 h-16 p-2 mx-auto my-0 bg-gray-300 rounded-full"
               src="img/html.svg"
               alt="CSS"
             />
@@ -92,10 +96,10 @@
             </p>
           </div>
           <div
-            class="w-44 h-28 py-8 px-4 text-sm bg-red-100 text-center border-b-4 border-red-500 rounded-xl"
+            class="px-4 py-8 text-sm text-center bg-red-100 border-b-4 border-red-500 w-44 h-28 rounded-xl"
           >
             <img
-              class="p-2 w-16 h-16 mx-auto my-0 bg-gray-300 rounded-full"
+              class="w-16 h-16 p-2 mx-auto my-0 bg-gray-300 rounded-full"
               src="img/mobile.svg"
               alt="CSS"
             />
@@ -107,7 +111,51 @@
           </div>
         </div>
       </div>
+      <!-- end of Advantages -->
     </main>
+    <div class="px-2 py-2 bg-gray-900">
+      <h1 class="my-3 font-black text-center text-white">
+        Sign up to download the free PDF
+      </h1>
+      <div class="grid gap-4 my-4 place-items-center">
+        <div
+          class="grid gap-4 place-content-center md:grid-cols-2 md:grid-rows-2 md:place-items-center"
+        >
+          <input
+            class="w-56 px-2 py-1 placeholder-gray-300 bg-gray-700 rounded-md outline-none md:w-96"
+            type="text"
+            name=""
+            id=""
+            placeholder="First Name"
+          />
+          <input
+            class="w-56 px-2 py-1 placeholder-gray-300 bg-gray-700 rounded-md outline-none md:w-96"
+            type="text"
+            name=""
+            id=""
+            placeholder="Last Name"
+          />
+          <input
+            class="w-56 px-2 py-1 placeholder-gray-300 bg-gray-700 rounded-md outline-none md:w-96"
+            type="text"
+            name=""
+            id=""
+            placeholder="Email"
+          />
+          <input
+            class="w-56 px-2 py-1 placeholder-gray-300 bg-gray-700 rounded-md outline-none md:w-96"
+            type="text"
+            name=""
+            id=""
+            placeholder="Your Title"
+          />
+        </div>
+        <button class="w-56 p-1 text-white bg-blue-500 rounded-md md:w-96">
+          Create Account
+        </button>
+      </div>
+    </div>
+
     <footer></footer>
   </body>
 </html>
